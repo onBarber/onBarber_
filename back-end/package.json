@@ -1,0 +1,22 @@
+{
+  "name": "onbarber-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint src --ext .ts,.js --fix",
+    "start": "ts-node src/server.ts --extensions \".ts\"",
+    "dev": "ts-node-dev src/server.ts --extensions \".ts\""
+  },
+  "lint-staged": {
+    "**/*.{js,jsx}": "yarn test:lint"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.27.0",
+    "@typescript-eslint/parser": "^4.27.0",
+    "eslint": "^7.29.0",
+    "lint-staged": "^11.0.0",
+    "typescript": "^4.3.4"
+  },
+  "dependencies": {}
+}
