@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rm -rf dist && tsc",
     "lint": "eslint src --ext .ts,.js --fix",
-    "start": "ts-node-dev dist/server.js",
+    "start": "ts-node-dev dist/src/server.js",
     "dev": "tsc-watch --onSuccess \"yarn start\""
   },
   "dependencies": {
