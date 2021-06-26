@@ -8,7 +8,7 @@ export async function up(knex: Knex): Promise<void> {
     table.string('phone', 20).notNullable();
     table.string('email', 100).notNullable().unique();
     table.string('password', 255).notNullable();
-    table.boolean('is_employee').notNullable();
+    table.boolean('is_admin').notNullable();
   });
 }
 
